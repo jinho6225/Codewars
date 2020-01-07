@@ -7,15 +7,15 @@ There will always be only one integer that appears an odd number of times.
 
 function findOdd(A) {
   //happy coding!
-  let obj = {};
-  A.forEach(function(el) {
-    obj[el] ? obj[el]++ : obj[el] = 1
-  })
-  for (let key in obj) {
-    if (obj[key] % 2 === 1) {
-      return Number(key)
+    let obj = {};
+    A.forEach(function(el) {
+        obj[el] ? obj[el]++ : obj[el] = 1
+    })
+    for (let key in obj) {
+        if (obj[key] % 2 === 1) {
+        return Number(key)
+        }
     }
-  }
 }
 
 //testing code below
