@@ -8,8 +8,19 @@ Strings passed in will consist of only letters and spaces. Spaces will be includ
 Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test")
 => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
 */
-function spinWords(){
+function spinWords(str){
   //TODO Have fun :)
+  let arr = str.split(' ')
+  let newArr = []
+  console.log(arr)
+  arr.forEach((x) => {
+    if (x.length >= 5) {
+      newArr.push(x.split('').reverse().join(''))
+    } else {
+      newArr.push(x)
+    }
+  })
+  return newArr.join(' ')
 }
 
 //testing code below
