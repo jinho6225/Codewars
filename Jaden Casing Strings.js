@@ -22,7 +22,7 @@ String.prototype.toJadenCase = function () {
 		jCased.push(word[0].toUpperCase() + word.slice(1));
 	}
 	return jCased.join(' ');
-  }
+}
 
 //testing code below
 var str = "How can mirrors be real if our eyes aren't real";
